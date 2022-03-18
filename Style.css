@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --blue : #e15f41;
+    --baseWhite : #f0f0f0;
+    --hoverColor :#e77f67;
+    --darkColor: #39383b;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:  var(--baseWhite);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+header .logo{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 3.5em;
+    color: var(--blue);    
+    text-transform: uppercase;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--blue);
+    transition: color 0.5s linear;
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+header nav a:hover{
+    color: var(--hoverColor);
+}
+
+@media only screen and (max-width: 700px) {
+    header nav .mainNavBtnAbout{
+        display: none;
+    }
+
+    header nav .mainNavBtnBenefits{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header nav .mainNavBtnAbout{
+        display: none;
+    }
+}
+
+section{
+    padding: 100px 150px;
+}
+
+.mainSection{
+   width: 100%;
+   min-height: 100vh;
+   display: flex; 
+   align-items: center;
+   background: url('Images/mainbg.jpg') no-repeat;
+   background-size: cover;
+   background-position:center center;
+   background-attachment: fixed;
+}
+
+.mainSection .mainContent h3{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.mainSection .mainContent h2{
+    color: var(--blue);
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.mainSection .mainContent h4{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.mainSection .mainContent .mainContentBtn{
+    color: white;
+    background-color: var(--blue);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
+
+.mainSection .mainContent .mainContentBtn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1.1);
+}
+
+.mainSection .mainSocialIcons a{
+    color: white;
+    font-size: 20px;
+}
+.mainSection .mainSocialIcons a:not(:first-child){
+    padding-left: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#Quality .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Quality .content .card{
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;    
+}
+
+#Quality .content .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#Quality .content .card .icon{
+    color: var(--blue);
+    font-size: 6em;
+    text-align: center;
+}
+
+#Quality .content .card .info{
+    text-align: center;
+}
+
+#Quality .content .card .info h3{
+    color: var(--blue);
+    margin: 10px;
+}
+
+
+#Safety{
+    background-color: var(--darkColor);
+}
+
+
+#Safety .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Safety .content .card{
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;    
+}
+
+#Safety .content .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#Safety .content .card .icon{
+    color: var(--blue);
+    font-size: 2em;
+    text-align: left;
+}
+
+#Safety .content .card .info{
+    text-align: left;
+}
+
+#Safety .content .card .info h3{
+    color: var(--blue);
+    margin: 5px 0px;
+}
+#Images{
+    background-color: var(--darkColor);
+
+}
+
+#Images .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Images .content .product-card{
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    margin: 20px;
+    transition: 0.7s ease;    
+}
+
+#Images .content .product-card:hover{
+    transform: scale(1.1);
+    cursor: pointer;        
+}
+
+#Images .content .product-card:hover .product-img img{
+    opacity: 0.8;
+}
+
+#Images .content .product-card .product-img img{
+    width: 100%;
+    height: 250px;
+    border-color: #39383b;
+    border: 1px solid var(--darkColor); 
+    transition: 0.7s ease;        
+}
+
+#Images .content .product-card .product-info{
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;        
+}
+
+#Images .content .product-card .product-info strong{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    
+}
+
+#Images .content .product-card .product-info strong span{
+    color: var(--darkColor);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#Images .content .product-card .product-info strong a{
+    text-decoration: none;
+    color:  var(--blue);
+}
+
+#Images .content .product-card .product-info strong a:hover{
+    color:  var(--hoverColor);
+}
+
+
+#Contact .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Contact .content .card{
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;    
+}
+
+#Contact .content .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#Contact .content .card .icon{
+    color: var(--blue);
+    font-size: 6em;
+    text-align: center;
+}
+
+#Contact .content .card .info{
+    text-align: center;
+}
+
+#Contact .content .card .info h3{
+    color: var(--blue);
+    margin: 10px;
+}
+
+footer{
+    background-color: var(--darkColor);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 30px 0 30px;
+}
+
+footer p{
+    color: white;
+}
+
+footer p span{
+    color: var(--hoverColor);
+    margin-left: 20px;
+}
+
+footer div{
+    margin-right: 50px;    
+}
+
+footer div a{
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;   
+}
+
+
+
+
+#Benefits .content{    
+    display: flex;    
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Benefits .content .card{
+    background-color: white;
+    width: 370px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;    
+}
+
+#Benefits .content .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#Benefits .content .card .icon{
+    color: var(--blue);
+    font-size: 2em;
+    text-align: left;
+}
+
+#Benefits .content .card .info{
+    text-align: left;
+}
+
+#Benefits .content .card .info h3{
+    color: var(--blue);
+    margin: 5px 0px;
+}
